@@ -4,4 +4,4 @@ services:
     image: nileshbhadana/flask-helloworld:latest
     container_name: flask-helloworld
     ports:
-    - 80:80
+    - 8081:80
