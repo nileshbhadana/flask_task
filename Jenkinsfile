@@ -3,7 +3,7 @@ pipeline {
     stages {
          stage('docker image build') {
             steps {
-                sh 'docker build -t bhuvnesh94/flask-helloworld  .'
+                sh 'docker build -t nileshbhadana/flask-helloworld  .'
             }
         }
          stage('docker container run') {
@@ -13,7 +13,7 @@ pipeline {
         }
          stage('docker image push to dockerhub') {
             steps {
-                sh 'docker push bhuvnesh94/flask-helloworld'
+                sh 'docker push nileshbhadana/flask-helloworld'
             }
         }
          stage('confirmation') {
